@@ -68,8 +68,10 @@ export default function History({ route, navigation, props }) {
           justifyContent: "space-between",
         }}
         onPress={() => {
-          setBill(item.Bill), setSplit(item.Split);
+          setBill(item.Bill);
+          setSplit(item.Split);
           setDiscount(item.Discount);
+          setDeliveryFee(item.Delivery);
         }}
       >
         <TouchableOpacity onPress={() => editBill(item.id)}>
